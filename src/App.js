@@ -24,7 +24,7 @@ function App() {
     setloading(true);
 
     let result = await fetch(
-      `https://6od5pbnse8.execute-api.us-east-1.amazonaws.com/llama_medical_lambda?query=${valueofinput}`
+      `https://schptrorye.execute-api.us-east-1.amazonaws.com/llama_lambda_medical_new?query=${valueofinput}`
     );
     const answer = await result.text().then((responseText) => {
       return responseText.substring(1, responseText.length - 1);
